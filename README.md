@@ -14,7 +14,6 @@
 
 ### app
 
-> yarn link "rollup-dev"
+> yarn link "rolluplib"
 > 
-> yarn link "webpack-dev"
-
+> yarn link "webpacklib"
