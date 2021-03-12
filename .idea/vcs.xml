@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/app" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rollup-lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ts-rollup-web-worker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tutorial-create-react-app-with-web-worker-and-typescript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webpack-lib" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/webpack-library-starter" vcs="Git" />
+  </component>
+</project>

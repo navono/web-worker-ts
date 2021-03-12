@@ -1,0 +1,31 @@
+{
+  "name": "rolluplib",
+  "version": "1.0.0",
+  "entry": "src/index.ts",
+  "main": "lib/rolluplib.js",
+  "module": "lib/rolluplib.esm.js",
+  "browser": "lib/rolluplib.js",
+  "types": "lib/index.d.ts",
+  "dependencies": {
+    "ms": "^2.0.0",
+    "ramda": "^0.27.1"
+  },
+  "devDependencies": {
+    "@types/ms": "^0.7.30",
+    "@types/ramda": "^0.27.38",
+    "rollup": "^2.40.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "rollup-plugin-web-worker-loader": "^1.6.1",
+    "ts-node": "^7.0.1",
+    "tslib": "^2.1.0",
+    "typescript": "^4.2.3"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "ts-node test/test.ts",
+    "pretest": "npm run build"
+  }
+}
