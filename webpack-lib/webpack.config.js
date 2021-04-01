@@ -1,6 +1,5 @@
 /* global __dirname, require, module*/
 
-const webpack = require("webpack");
 const path = require("path");
 const yargs = require("yargs");
 const NpmDtsPlugin = require('npm-dts-webpack-plugin')
