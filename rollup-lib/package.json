@@ -11,8 +11,11 @@
     "ramda": "^0.27.1"
   },
   "devDependencies": {
+    "@surma/rollup-plugin-comlink": "^0.3.0",
+    "@surma/rollup-plugin-off-main-thread": "^2.1.0",
     "@types/ms": "^0.7.30",
     "@types/ramda": "^0.27.38",
+    "comlink": "^4.3.0",
     "rollup": "^2.40.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",

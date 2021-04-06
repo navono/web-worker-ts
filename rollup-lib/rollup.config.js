@@ -2,7 +2,9 @@ import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import pkg from './package.json';
-import webWorkerLoader from 'rollup-plugin-web-worker-loader';
+// import webWorkerLoader from 'rollup-plugin-web-worker-loader';
+import comlink from "@surma/rollup-plugin-comlink";
+import omt from "@surma/rollup-plugin-off-main-thread";
 
 export default [
 	// browser-friendly UMD build
@@ -14,9 +16,11 @@ export default [
 			name: "rolluplib",
 		},
 		plugins: [
-			webWorkerLoader({
-				inline: true,
-			}),
+			// webWorkerLoader({
+			// 	inline: true,
+			// }),
+			comlink(),
+			omt(),
 			resolve(),   // so Rollup can find `ms`
 			commonjs(),  // so Rollup can convert `ms` to an ES module
 			typescript({

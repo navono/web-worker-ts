@@ -10,6 +10,21 @@
     estree-walker "^2.0.1"
     picomatch "^2.2.2"
 
+"@surma/rollup-plugin-comlink@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@surma/rollup-plugin-comlink/-/rollup-plugin-comlink-0.3.0.tgz#d8aac24f65fba76a5645b4e8cbfd77c8a09eeb0d"
+  integrity sha512-ySOhKfMmhflBKTJMAWGPyxDSjiCePfedmErKQOTiQYVuxzmOQqU0qgZ5hmInkFSfJDQRzi9/y8HzbIggwguQBQ==
+
+"@surma/rollup-plugin-off-main-thread@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@surma/rollup-plugin-off-main-thread/-/rollup-plugin-off-main-thread-2.1.0.tgz#088615587bf11fa1368ebc14c78b7256f7a02016"
+  integrity sha512-xQnXQc2N/P/fS1qxSwf/gN7I4xjZ3LGpoTXpFpqj7hhpqFsmYKPj792HFSkTfQWhxNLnQN7m/0XIraZ5htlDYg==
+  dependencies:
+    ejs "^2.6.1"
+    json5 "^2.2.0"
+    magic-string "^0.25.0"
+    tippex "^3.0.0"
+
 "@types/estree@*":
   version "0.0.46"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.46.tgz#0fb6bfbbeabd7a30880504993369c4bf1deab1fe"
@@ -54,6 +69,11 @@ builtin-modules@^3.1.0:
   resolved "https://registry.yarnpkg.com/builtin-modules/-/builtin-modules-3.2.0.tgz#45d5db99e7ee5e6bc4f362e008bf917ab5049887"
   integrity sha512-lGzLKcioL90C7wMczpkY0n/oART3MbBa8R9OFGE1rJxoVI86u4WAGfEk8Wjv10eKSyTHVGkSo3bvBylCEtk7LA==
 
+comlink@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/comlink/-/comlink-4.3.0.tgz#80b3366baccd87897dab3638ebfcfae28b2f87c7"
+  integrity sha512-mu4KKKNuW8TvkfpW/H88HBPeILubBS6T94BdD1VWBXNXfiyqVtwUCVNO1GeNOBTsIswzsMjWlycYr+77F5b84g==
+
 commondir@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/commondir/-/commondir-1.0.1.tgz#ddd800da0c66127393cca5950ea968a3aaf1253b"
@@ -63,6 +83,11 @@ diff@^3.1.0:
   version "3.5.0"
   resolved "https://registry.yarnpkg.com/diff/-/diff-3.5.0.tgz#800c0dd1e0a8bfbc95835c202ad220fe317e5a12"
   integrity sha512-A46qtFgd+g7pDZinpnwiRJtxbC1hpgf0uzP3iG89scHk0AUC7A1TGxf5OiiOUv/JMZR8GOt8hL900hV0bOy5xA==
+
+ejs@^2.6.1:
+  version "2.7.4"
+  resolved "https://registry.yarnpkg.com/ejs/-/ejs-2.7.4.tgz#48661287573dcc53e366c7a1ae52c3a120eec9ba"
+  integrity sha512-7vmuyh5+kuUyJKePhQfRQBhXV5Ce+RnaeeQArKu1EAMpL3WbgMt5WG6uQZpEVvYSSsxMXRKOewtDk9RaTKXRlA==
 
 estree-walker@^0.6.1:
   version "0.6.1"
@@ -141,6 +166,13 @@ is-reference@^1.1.2:
   dependencies:
     "@types/estree" "*"
 
+json5@^2.2.0:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/json5/-/json5-2.2.0.tgz#2dfefe720c6ba525d9ebd909950f0515316c89a3"
+  integrity sha512-f+8cldu7X/y7RAJurMEJmdoKXGB/X550w2Nr3tTbezL6RwEE/iMcm+tZnXeoZtKuOq6ft8+CqzEkrIgx1fPoQA==
+  dependencies:
+    minimist "^1.2.5"
+
 jsonfile@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/jsonfile/-/jsonfile-4.0.0.tgz#8771aae0799b64076b76640fca058f9c10e33ecb"
@@ -155,7 +187,7 @@ locate-path@^5.0.0:
   dependencies:
     p-locate "^4.1.0"
 
-magic-string@^0.25.2:
+magic-string@^0.25.0, magic-string@^0.25.2:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
   integrity sha512-4CrMT5DOHTDk4HYDlzmwu4FVCcIYI8gauveasrdCu2IKIFOJ3f0v/8MDGJCDL9oD2ppz/Av1b0Nj345H9M+XIA==
@@ -319,6 +351,11 @@ sourcemap-codec@^1.4.4:
   version "1.4.8"
   resolved "https://registry.yarnpkg.com/sourcemap-codec/-/sourcemap-codec-1.4.8.tgz#ea804bd94857402e6992d05a38ef1ae35a9ab4c4"
   integrity sha512-9NykojV5Uih4lgo5So5dtw+f0JgJX30KCNI8gwhz2J9A15wD0Ml6tjHKwf6fTSa6fAdVBdZeNOs9eJ71qCk8vA==
+
+tippex@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/tippex/-/tippex-3.0.0.tgz#b17609a27ceaffe0797b387393fd99878e4d7ea9"
+  integrity sha1-sXYJonzq/+B5ezhzk/2Zh45Nfqk=
 
 ts-node@^7.0.1:
   version "7.0.1"
